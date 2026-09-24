@@ -1023,7 +1023,8 @@ def fetch_profile_reference(codex_home: Path) -> dict[str, Any]:
         result.update(status='ok', days=days, _scope=account_scope(codex_home, auth))
     except urllib.error.HTTPError as exc:
         result['error'] = f'账户统计请求失败：HTTP {exc.code}'
-        exc.close()
+        if exc.fp is not None:
+            exc.close()
     except (OSError, ValueError, TypeError, AttributeError):
         result['error'] = '无法读取账户统计；请检查现有登录和网络连接'
     return result

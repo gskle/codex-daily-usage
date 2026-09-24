@@ -1,6 +1,6 @@
 {
   "name": "codex-daily-usage",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "非官方 Codex 用量统计：账户兼容统计、本机与SSH任务明细、账户占比和未归属差额。",
   "skills": "./skills/",
   "interface": {

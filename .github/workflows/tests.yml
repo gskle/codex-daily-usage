@@ -5,6 +5,7 @@ permissions:
 jobs:
   unit-tests:
     strategy:
+      fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest]
         python: ['3.8', '3.12']
