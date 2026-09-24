@@ -1,0 +1,20 @@
+{
+  "name": "codex-usage-tools",
+  "interface": {
+    "displayName": "Codex Usage Tools"
+  },
+  "plugins": [
+    {
+      "name": "codex-daily-usage",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex-daily-usage"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

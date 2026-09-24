@@ -1,0 +1,25 @@
+{
+  "name": "codex-daily-usage",
+  "version": "0.1.0",
+  "description": "非官方 Codex 用量统计：账户兼容统计、本机与SSH任务明细、账户占比和未归属差额。",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Codex 用量统计",
+    "shortDescription": "账户总量与本机、SSH任务用量",
+    "longDescription": "以Profile兼容统计作为账户显示基准，按UTC汇总；自动读取本机和已配置SSH的任务明细，保留后台审批与未归属差额。",
+    "developerName": "Codex Daily Usage",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "按账户统计基准，合并本机与已配置 SSH 服务器，查看最近 30 天每日用量及各模型调用数。",
+      "按账户统计基准，列出本机与已配置 SSH 服务器各任务的 token 数和近 7 天占比。",
+      "按账户统计基准，合并本机与已配置 SSH 服务器，统计今天的 Codex 用量。"
+    ]
+  },
+  "author": {
+    "name": "Codex Daily Usage"
+  }
+}
